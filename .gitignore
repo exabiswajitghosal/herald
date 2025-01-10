@@ -1,0 +1,89 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# C extensions
+*.so
+
+# Virtual environments
+env/
+venv/
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+
+# Logs and database files
+*.log
+*.sqlite3
+
+# Unit test and coverage reports
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+
+# PyInstaller
+# Usually these files are written by a Python script from a template
+# before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environments
+.env
+*.env
+.env.*
+.envrc
+*.envrc
+
+# IDE
+*.swp
+*.swo
+
+# Python Eggs
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+*.snap
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg-info/
+.eggs/
+
+# Test results
+*.tox
+.tox/
+.cache
+.nox/
+*.nox
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Sphinx documentation
+docs/_build/
