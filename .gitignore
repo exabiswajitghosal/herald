@@ -11,6 +11,11 @@ __pycache__/
 env/
 venv/
 
+# uploads
+uploads/
+sample/
+output/
+
 # VS Code settings
 .vscode/
 
