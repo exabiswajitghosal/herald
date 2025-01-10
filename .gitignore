@@ -13,6 +13,7 @@ venv/
 
 # uploads
 uploads/
+sample/doc
 output/
 
 # VS Code settings
