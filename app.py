@@ -74,6 +74,12 @@ def document_processing():
         filename = os.path.join(upload_folder, file.filename)
         file.save(filename)
         response = match_extracted_with_template(file_path=filename,submission_id=submission_id)
+        if not response:
+            return ({
+                "message": "Error extracting data from the document.",
+                "filename": file.filename,
+                "submission_id": submission_id
+            })
         return jsonify({
             "message": "Data Extracted Successfully.",
             "filename": file.filename,
