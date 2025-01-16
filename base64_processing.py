@@ -29,6 +29,7 @@ def pdf_to_base64_images(pdf_path, dpi=200):
             base64_images.append(img_base64)
     except Exception as e:
         print(f"Error converting PDF to Base64 images: {e}")
+        return None
     return base64_images
 
 def fetch_insights(pdf_path,submission_id):
@@ -90,15 +91,18 @@ def fetch_insights(pdf_path,submission_id):
                 return parsed_response
         else:
             print(f"API Error: {response.status_code}, {response.text}")
-            return "Error: Unable to fetch insights."
+            return None
 
     except Exception as e:
-        return f"Error fetching insights: {str(e)}"
+        print(f"Error fetching insights: {str(e)}")
+        return None
 
 
 def match_extracted_with_template(file_path,submission_id):
     # file_path = f'uploads/a79de526-e0cf-4571-a9c0-2f817e4d3735/sample1.pdf'
     data = fetch_insights(pdf_path=file_path,submission_id=submission_id)
+    if not data:
+        return None
     model = ChatOpenAI(model="gpt-4o", temperature=0.1)
     with open('sample/template/template.json') as file:
         structure = file.read()
