@@ -8,7 +8,7 @@ from langchain.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from datetime import datetime
 
-from create_database import generate_data_store
+from dataprocessing.create_database import generate_data_store
 
 load_dotenv()
 
@@ -59,7 +59,7 @@ def generate_content_from_documents(submission_id):
 def match_output(submission_id):
     data = generate_content_from_documents(submission_id=submission_id)
     model = ChatOpenAI(model="gpt-4o", temperature=0.1)
-    with open('sample/template/template.json') as file:
+    with open('../sample/template/template.json') as file:
         structure = file.read()
     system_prompt = (f'You are an AI assistant specialized in extracting information from a document.'
                      f'Please analyze the provided text and extract information in the following JSON format:'

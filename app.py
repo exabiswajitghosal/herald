@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 import os
 
 # local module
-from process_doc import match_output
 from base64_processing import match_extracted_with_template
 
 # Load environment variables
