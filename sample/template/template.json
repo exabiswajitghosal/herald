@@ -38,7 +38,7 @@
     },
     {
       "coverage_parameter_id": "cvg_7fsk_cyb_aggregate_retention",
-      "value": "<value>",
+      "value": 1000,
       "parameter_text": {
         "applicant_facing_text": "Per Claim Retention",
         "agent_facing_text": "Per Claim Retention"
