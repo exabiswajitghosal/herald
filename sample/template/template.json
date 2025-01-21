@@ -596,7 +596,7 @@
     },
     {
       "risk_parameter_id": "rsk_5m1o_cyb_cloud_storage",
-      "value": "<value>",
+      "value": "no",
       "parameter_text": {
         "applicant_facing_text": "Do you have sensitive information stored on the cloud?",
         "agent_facing_text": "Does the applicant have sensitive information stored on the cloud?"
