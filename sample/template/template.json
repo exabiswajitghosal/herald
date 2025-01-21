@@ -552,11 +552,45 @@
     {
       "risk_parameter_id": "rsk_64p7_data_encryption",
       "value": [
-        "<value>"
+        "Encrypt sensitive data in emails sent to external parties","De-identify sensitive data at rest"
       ],
       "parameter_text": {
         "applicant_facing_text": "Which of the following actions do you take to protect sensitive data?",
         "agent_facing_text": "Which of the following actions does the applicant take to protect sensitive data?"
+      },
+      "input_type": "select_many"
+    },
+    {
+      "risk_parameter_id": "rsk_un9n_network_authentication",
+      "value": [
+        "All web-based email accounts","Local and remote access to privileged user/network administrator accounts"
+      ],
+      "parameter_text": {
+        "applicant_facing_text": "For which of the following do you require multi-factor authentication (MFA) (select all the apply)?",
+        "agent_facing_text": "For which of the following does the applicant require multi-factor authentication (MFA) (select all the apply)?"
+      },
+      "input_type": "select_many"
+    },
+    {
+      "risk_parameter_id": "rsk_a18w_stored_records_type",
+      "value": [
+        "Payment Card Information",
+        "Personal Information"
+      ],
+      "parameter_text": {
+        "applicant_facing_text": "Do you store, transmit, collect, or process any of the following information, not including employee information?",
+        "agent_facing_text": "Does the applicant store, transmit, collect, or process any of the following information, not including employee information?"
+      },
+      "input_type": "select_many"
+    },
+    {
+      "risk_parameter_id": "rsk_h8oi_high_risk_industry_type",
+      "value": [
+        "Data aggregation", "Gambling"
+      ],
+      "parameter_text": {
+        "applicant_facing_text": "Are you engaged in any of the following business activities?",
+        "agent_facing_text": "Is the applicant engaged in any of the following business activities?"
       },
       "input_type": "select_many"
     },
