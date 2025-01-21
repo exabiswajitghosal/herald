@@ -46,6 +46,15 @@
       "input_type": "select_one"
     },
     {
+      "coverage_parameter_id": "cvg_ckn4_cyb_per_claim_retention",
+      "value": 1000,
+      "parameter_text": {
+        "applicant_facing_text": "Per Claim Retention",
+        "agent_facing_text": "Per Claim Retention"
+      },
+      "input_type": "select_one"
+    },
+    {
       "coverage_parameter_id": "cvg_orn9_cyb_waiting_period",
       "value": "<value>",
       "parameter_text": {
