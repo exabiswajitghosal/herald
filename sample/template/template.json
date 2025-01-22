@@ -552,7 +552,8 @@
     {
       "risk_parameter_id": "rsk_64p7_data_encryption",
       "value": [
-        "Encrypt sensitive data in emails sent to external parties","De-identify sensitive data at rest"
+        "Encrypt sensitive data in emails sent to external parties",
+        "De-identify sensitive data at rest"
       ],
       "parameter_text": {
         "applicant_facing_text": "Which of the following actions do you take to protect sensitive data?",
@@ -563,7 +564,8 @@
     {
       "risk_parameter_id": "rsk_un9n_network_authentication",
       "value": [
-        "All web-based email accounts","Local and remote access to privileged user/network administrator accounts"
+        "All web-based email accounts",
+        "Local and remote access to privileged user/network administrator accounts"
       ],
       "parameter_text": {
         "applicant_facing_text": "For which of the following do you require multi-factor authentication (MFA) (select all the apply)?",
@@ -585,7 +587,8 @@
     {
       "risk_parameter_id": "rsk_h8oi_high_risk_industry_type",
       "value": [
-        "Data aggregation", "Gambling"
+        "Data aggregation",
+        "Gambling"
       ],
       "parameter_text": {
         "applicant_facing_text": "Are you engaged in any of the following business activities?",
@@ -622,10 +625,23 @@
     },
     {
       "risk_parameter_id": "rsk_jb26_cyb_has_claims_history",
-      "value": "<value>",
+      "value": "no",
       "parameter_text": {
         "applicant_facing_text": "Have you ever experienced any incidents, situations, allegations, or losses that have resulted in or could reasonably give rise to a claim, loss, or any legal or regulatory actions against you that would fall within the scope of a cyber insurance policy for which you are applying?",
         "agent_facing_text": "Has the applicant ever experienced any incidents, situations, allegations, or losses that have resulted in or could reasonably give rise to a claim, loss, or any legal or regulatory actions against them that would fall within the scope of a cyber insurance policy for which the applicant is applying?"
+      },
+      "input_type": "select_one"
+    },
+    {
+      "risk_parameter_id": "rsk_o23k_cyb_has_claims_history_within_five_years",
+      "value": "no"
+    },
+    {
+      "risk_parameter_id": "rsk_ggy8_cyb_warranty",
+      "value": "no",
+      "parameter_text": {
+        "applicant_facing_text": "Are you aware of any circumstances that could reasonably give rise, to a claim, loss, or any legal or regulatory actions against you that would fall within the scope of a cyber insurance policy for which you are applying?",
+        "agent_facing_text": "Is the applicant aware of any circumstances that could reasonably give rise, to a claim, loss, or any legal or regulatory actions against them that would fall within the scope of a cyber insurance policy for which the applicant is applying?"
       },
       "input_type": "select_one"
     }
