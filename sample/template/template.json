@@ -574,8 +574,7 @@
     {
       "risk_parameter_id": "rsk_a18w_stored_records_type",
       "value": [
-        "Payment Card Information",
-        "Personal Information"
+        "None of the above"
       ],
       "parameter_text": {
         "applicant_facing_text": "Do you store, transmit, collect, or process any of the following information, not including employee information?",
